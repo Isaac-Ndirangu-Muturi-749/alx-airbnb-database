@@ -47,22 +47,6 @@ Upon review, there are no significant redundant columns in any of the tables, bu
 - **Bookings Table**: Remove `total_price`. This can be calculated dynamically based on `start_date`, `end_date`, and `property.price_per_night`.
 - **Payments Table**: The `amount` column is important for historical and reporting purposes, but can technically be calculated from the booking data.
 
-#### **Step 3: Apply 3NF**
-
-The following changes are made to achieve 3NF:
-
-- **Bookings**:
-  - `total_price` is removed. Instead, we will calculate it dynamically based on `property.price_per_night * (end_date - start_date)`.
-
-- **Payments**:
-  - Keep the `amount` field, but we ensure no transitive dependencies exist (i.e., the `amount` is directly dependent on `payment_id`).
-
-#### **Normalization Markdown**
-
-Here’s how to explain this process in a `normalization.md` file:
-
----
-
 ### Database Normalization (3NF)
 
 #### **Step 1: First Normal Form (1NF)**
