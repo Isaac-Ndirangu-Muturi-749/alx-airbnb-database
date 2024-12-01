@@ -1,4 +1,4 @@
-To achieve Third Normal Form (3NF) in your database design, follow these key steps:
+To achieve Third Normal Form (3NF) in the database design:
 
 ### 1. **First Normal Form (1NF)**:
    - **Eliminate Duplicate Columns**: Each column in a table should contain atomic values, meaning no lists or repeating groups.
@@ -73,5 +73,3 @@ We eliminated transitive dependencies, ensuring that non-key attributes only dep
 2. **Added Check Constraint for Reviews**: A constraint was added to the `rating` field in the `Reviews` table, ensuring the rating value is between 1 and 5, as per the normalization process.
 
 3. **No Transitive Dependencies**: All fields are now appropriately linked and no non-key attribute is depending on another non-key attribute (ensuring 3NF).
-
-This code reflects the structure after normalization, ensuring the database follows best practices for data integrity and minimizing redundancy.

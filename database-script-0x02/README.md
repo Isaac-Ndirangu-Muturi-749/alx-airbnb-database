@@ -1,4 +1,4 @@
-The SQL script (`seed.sql`) to populate the database with sample data for the Airbnb database, ensuring the data reflects real-world usage:
+The SQL script (`seed.sql`) populates the database with sample data for the Airbnb database, ensuring the data reflects real-world usage:
 
 ### Key Points in the `seed.sql` file:
 1. **Users**: Four sample users are inserted—two guests, one host, and one admin. Each user has a unique UUID, name, email, password hash, role, and creation timestamp.
@@ -12,4 +12,3 @@ The SQL script (`seed.sql`) to populate the database with sample data for the Ai
 5. **Reviews**: Two reviews are added for the properties, with ratings (1-5), comments, and timestamps.
 
 6. **Messages**: Two sample messages are inserted to simulate communication between users (e.g., guests asking hosts questions or confirming bookings).
-
