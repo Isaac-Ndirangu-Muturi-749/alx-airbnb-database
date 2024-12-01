@@ -7,9 +7,6 @@ This script contains SQL queries demonstrating the use of INNER JOIN, LEFT JOIN,
 2. **LEFT JOIN**: Retrieves all properties and their associated reviews, including properties with no reviews.
 3. **FULL OUTER JOIN**: Retrieves all users and all bookings, ensuring no data is excluded even if not linked.
 
-## Usage
-Run the queries in a PostgreSQL environment to verify the results.
-
 # Task 1: Practice Subqueries
 
 This script demonstrates the use of correlated and non-correlated subqueries.
@@ -18,8 +15,6 @@ This script demonstrates the use of correlated and non-correlated subqueries.
 1. **Non-Correlated Subquery**: Retrieves properties with an average rating greater than 4.0.
 2. **Correlated Subquery**: Identifies users who have made more than 3 bookings.
 
-## Usage
-Execute the queries in a PostgreSQL environment to view results.
 
 # Task 2: Apply Aggregations and Window Functions
 
@@ -28,7 +23,3 @@ This script demonstrates SQL aggregation functions and window functions to analy
 ### Queries Included
 1. **Aggregation**: Counts the total number of bookings per user.
 2. **Window Function**: Ranks properties based on the number of bookings.
-
-## Usage
-Run the queries in a PostgreSQL environment to view results.
-
